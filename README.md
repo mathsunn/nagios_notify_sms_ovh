@@ -36,7 +36,9 @@ define command {
 
 == Credits ==
 Original author : Renaud Chaput
-Contributors :
+
+
+Contributors :  
 * Nicolas Szalay  
 * Mathieu Juers
 
