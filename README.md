@@ -10,7 +10,7 @@ Change to use user instead of nichandle
 == Install ==  
 
 cd /usr/local/  
-git clone https://github.com/mathsunn/nagios_notify_sms_ovh.git 
+git clone https://github.com/mathsunn/nagios_notify_sms_ovh.git  
 chown -R nagios:nagios nagios_notify_sms_ovh  
 chmod u+x nagios_notify_sms_ovh/nagios_notify_sms_ovh.rb  
 
