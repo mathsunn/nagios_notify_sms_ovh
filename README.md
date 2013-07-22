@@ -34,7 +34,7 @@ define command {
         command_line    /usr/bin/ruby /usr/local/nagios_notify_sms_ovh/nagios_notify_sms_ovh.rb -c /usr/local/nagios_notify_sms_ovh/conf.yml -m service -s "$SERVICEDESC$" -h $HOSTALIAS$ -d "$LONGDATETIME$" -t $NOTIFICATIONTYPE$ -a $HOSTSTATE$ -e '$SERVICEOUTPUT$' -n $CONTACTPAGER$
 }
 
-== Credits ==
+== Credits ==  
 Original author : Renaud Chaput
 
 
@@ -42,5 +42,5 @@ Contributors :
 * Nicolas Szalay  
 * Mathieu Juers
 
-== Licence ==
+== Licence ==  
 This script is licenced under MIT Licence
