@@ -9,13 +9,14 @@ Change to use user instead of nichandle
 
 == Install ==  
 
-su - nagios  
 cd /usr/local/  
-git clone https://github.com/mathsunn/nagios_notify_sms_ovh.git  
-chmod u+x nagios_notify_sms_ovh.rb  
+git clone https://github.com/mathsunn/nagios_notify_sms_ovh.git 
+chown -R nagios:nagios nagios_notify_sms_ovh 
+chmod u+x nagios_notify_sms_ovh/nagios_notify_sms_ovh.rb  
 
 == Summary ==
-Small utility to send Nagios alerts on a mobile phone using OVH SMS API
+
+Small utility to send Nagios alerts on a mobile phone using OVH SMS API  
 
 == Files ==
 
