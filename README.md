@@ -1,16 +1,18 @@
 nagios_notify_sms_ovh
 =====================
 
-To notify Nagios hosts and services with problems by sms with OVH SMS API
+To notify Nagios hosts and services with problems by sms with OVH SMS API  
 
-Fork of https://github.com/renchap/nagios_notify_sms_ovh
-Change to use user instead of nichandle
+Fork of https://github.com/renchap/nagios_notify_sms_ovh  
 
-== Install ==
-su - nagios
-cd /usr/local/
-git clone https://github.com/mathsunn/nagios_notify_sms_ovh.git
-chmod u+x nagios_notify_sms_ovh.rb
+Change to use user instead of nichandle  
+
+== Install ==  
+
+su - nagios  
+cd /usr/local/  
+git clone https://github.com/mathsunn/nagios_notify_sms_ovh.git  
+chmod u+x nagios_notify_sms_ovh.rb  
 
 == Summary ==
 Small utility to send Nagios alerts on a mobile phone using OVH SMS API
