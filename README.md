@@ -37,7 +37,8 @@ define command {
 == Credits ==
 Original author : Renaud Chaput
 Contributors :
-* Nicolas Szalay
+* Nicolas Szalay  
+* Mathieu Juers
 
 == Licence ==
 This script is licenced under MIT Licence
