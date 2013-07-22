@@ -1,0 +1,28 @@
+ovhManager:
+  user: "user"
+  password: "changeme"
+  smsAccount: "sms-example-1"
+  fromNumber: "+339XXXXXX"
+strip:
+  hostname:
+    - .localdomain
+replace:
+  type:
+    PROBLEM: v
+    RECOVERY: ^
+  state:
+    WARNING: W
+    CRITICAL: C
+errorMail:
+  server: localhost
+  to: errorMail@localhost
+  from: errorMail@localhost
+credit:
+  threshold: 500
+throttling:
+  delay: 300
+  limit: 5
+  spooldir: "/tmp/sms_spool/"
+kill:
+  file: "/tmp/sms.kill"
+  file_age: 3600
