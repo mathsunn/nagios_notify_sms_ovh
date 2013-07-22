@@ -18,7 +18,6 @@ Small utility to send Nagios alerts on a mobile phone using OVH SMS API
 == Files ==
 
 * nagios_notify_sms_ovh.rb => sends SMS
-* single_checker.rb => only checks for remaining credit
 
 == Sample nagios config ==
 
@@ -29,7 +28,7 @@ define command {
 
 define command {
         command_name    notify-service-by-sms
-        command_line    /usr/bin/ruby /usr/local/nagios_notify_sms_ovh/nagios_notify_sms_ovh.rb -c /usr/local/nagios_notify_sms_ovh/conf.yml -m service -s "$SERVICEDESC$" -h $HOSTALIAS$ -d "$LONGDATETIME$" -t $NOTIFICATIONTYPE$ -a $HOSTSTATE$ -e "$SERVICEOUTPUT$" -n $CONTACTPAGER$
+        command_line    /usr/bin/ruby /usr/local/nagios_notify_sms_ovh/nagios_notify_sms_ovh.rb -c /usr/local/nagios_notify_sms_ovh/conf.yml -m service -s "$SERVICEDESC$" -h $HOSTALIAS$ -d "$LONGDATETIME$" -t $NOTIFICATIONTYPE$ -a $HOSTSTATE$ -e '$SERVICEOUTPUT$' -n $CONTACTPAGER$
 }
 
 == Credits ==
