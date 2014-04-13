@@ -22,12 +22,12 @@ Small utility to send Nagios alerts on a mobile phone using OVH SMS API
 
 == Sample nagios config ==
 
-`define command {
-        command_name    notify-host-by-sms
-        command_line    /usr/bin/ruby /usr/local/nagios_notify_sms_ovh/nagios_notify_sms_ovh.rb -c /usr/local/nagios_notify_sms_ovh/conf.yml -m host -h $HOSTALIAS$ -d "$LONGDATETIME$" -t $NOTIFICATIONTYPE$ -a $HOSTSTATE$ -e '' -n "$CONTACTPAGER$"
+`define command {  
+        command_name    notify-host-by-sms  
+        command_line    /usr/bin/ruby /usr/local/nagios_notify_sms_ovh/nagios_notify_sms_ovh.rb -c /usr/local/nagios_notify_sms_ovh/conf.yml -m host -h $HOSTALIAS$ -d "$LONGDATETIME$" -t $NOTIFICATIONTYPE$ -a $HOSTSTATE$ -e '' -n "$CONTACTPAGER$"  
 }`
 
-`define command {
-        command_name    notify-service-by-sms
-        command_line    /usr/bin/ruby /usr/local/nagios_notify_sms_ovh/nagios_notify_sms_ovh.rb -c /usr/local/nagios_notify_sms_ovh/conf.yml -m service -s "$SERVICEDESC$" -h $HOSTALIAS$ -d "$LONGDATETIME$" -t $NOTIFICATIONTYPE$ -a $HOSTSTATE$ -e '$SERVICEOUTPUT$' -n $CONTACTPAGER$
+`define command {  
+        command_name    notify-service-by-sms  
+        command_line    /usr/bin/ruby /usr/local/nagios_notify_sms_ovh/nagios_notify_sms_ovh.rb -c /usr/local/nagios_notify_sms_ovh/conf.yml -m service -s "$SERVICEDESC$" -h $HOSTALIAS$ -d "$LONGDATETIME$" -t $NOTIFICATIONTYPE$ -a $HOSTSTATE$ -e '$SERVICEOUTPUT$' -n $CONTACTPAGER$  
 }`
